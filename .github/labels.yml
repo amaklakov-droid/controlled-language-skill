@@ -21,7 +21,19 @@
 
 - name: "lang:ru"
   color: "c5def5"
-  description: "Russian translation (docs/ru/)"
+  description: "Russian (docs/ru/, languages/ru.md)"
+
+- name: "lang:de"
+  color: "c5def5"
+  description: "German (docs/de/, languages/de.md)"
+
+- name: "lang:fr"
+  color: "c5def5"
+  description: "French (docs/fr/, languages/fr.md)"
+
+- name: "lang:es"
+  color: "c5def5"
+  description: "Spanish (docs/es/, languages/es.md)"
 
 - name: "docs"
   color: "0075ca"
