@@ -20,8 +20,8 @@ integration (CI).
 
 ## How the skill starts
 
-Most agents start the skill automatically when the request is about clear
-technical text in any language, documentation, or ASD-STE100. You can also
+Most agents start the skill automatically when the request is about clear,
+readable, or unambiguous text, documentation, or ASD-STE100. You can also
 start it directly:
 
 - In Claude Code, after the plugin installation:

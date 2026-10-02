@@ -3,6 +3,20 @@
 All notable changes to this project are in this file. The project uses
 [Semantic Versioning](https://semver.org/).
 
+## [1.1.0] - 2026-10-02
+
+### Changed
+
+- Positioning: the skill is for any text that must be clear, easy to read,
+  and unambiguous (documentation, instructions, explanations, emails,
+  reports, answers), not only for technical documentation. The skill
+  description, the README files, and the plugin manifests changed. The
+  rules did not change.
+
+### Added
+
+- A banner for the README and a social preview image (`.github/assets/`).
+
 ## [1.0.0] - 2026-10-02
 
 ### Added

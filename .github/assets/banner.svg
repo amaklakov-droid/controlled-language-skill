@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">Controlled Language</title>
+  <desc id="desc">Open-source agent skill: clear, readable, unambiguous text in any language. Three strictness levels: Light, Standard, Strict.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1324"/>
+      <stop offset="1" stop-color="#14274A"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#FFFFFF" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="bar1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7DD3FC"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="bar2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#0EA5E9" stop-opacity="0.75"/>
+    </linearGradient>
+    <linearGradient id="bar3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FCD34D"/>
+      <stop offset="1" stop-color="#F59E0B" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect width="1280" height="640" fill="url(#grid)"/>
+  <circle cx="1015" cy="330" r="260" fill="none" stroke="#38BDF8" stroke-opacity="0.07" stroke-width="2"/>
+  <circle cx="1015" cy="330" r="200" fill="none" stroke="#38BDF8" stroke-opacity="0.05" stroke-width="2"/>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+    <!-- Left column -->
+    <text x="88" y="150" fill="#F5B83D" font-size="20" font-weight="700" letter-spacing="4">OPEN-SOURCE AGENT SKILL</text>
+    <text x="84" y="252" fill="#FFFFFF" font-size="96" font-weight="800" letter-spacing="-2">Controlled</text>
+    <text x="84" y="352" fill="#FFFFFF" font-size="96" font-weight="800" letter-spacing="-2">Language</text>
+    <text x="88" y="420" fill="#CBD5E1" font-size="32" font-weight="500">Clear, readable, unambiguous text</text>
+    <text x="88" y="462" fill="#CBD5E1" font-size="32" font-weight="500">in any language.</text>
+
+    <!-- Language chips -->
+    <g font-size="18" font-weight="700" text-anchor="middle">
+      <rect x="88" y="512" width="60" height="36" rx="18" fill="#F5B83D"/>
+      <text x="118" y="536" fill="#0B1324">EN</text>
+      <rect x="160" y="512" width="60" height="36" rx="18" fill="none" stroke="#7DD3FC" stroke-width="2"/>
+      <text x="190" y="536" fill="#E0F2FE">RU</text>
+      <rect x="232" y="512" width="60" height="36" rx="18" fill="none" stroke="#7DD3FC" stroke-width="2"/>
+      <text x="262" y="536" fill="#E0F2FE">DE</text>
+      <rect x="304" y="512" width="60" height="36" rx="18" fill="none" stroke="#7DD3FC" stroke-width="2"/>
+      <text x="334" y="536" fill="#E0F2FE">FR</text>
+      <rect x="376" y="512" width="60" height="36" rx="18" fill="none" stroke="#7DD3FC" stroke-width="2"/>
+      <text x="406" y="536" fill="#E0F2FE">ES</text>
+      <rect x="448" y="512" width="60" height="36" rx="18" fill="none" stroke="#7DD3FC" stroke-opacity="0.45" stroke-width="2" stroke-dasharray="4 4"/>
+      <text x="478" y="537" fill="#7DD3FC" fill-opacity="0.8">+</text>
+    </g>
+
+    <text x="88" y="598" fill="#94A3B8" font-size="18" font-weight="500">Claude Code · Codex · Copilot · Cursor · Gemini CLI · any LLM</text>
+
+    <!-- Strictness levels -->
+    <g>
+      <rect x="866" y="350" width="76" height="130" rx="10" fill="url(#bar1)"/>
+      <rect x="976" y="270" width="76" height="210" rx="10" fill="url(#bar2)"/>
+      <rect x="1086" y="190" width="76" height="290" rx="10" fill="url(#bar3)"/>
+
+      <g font-size="34" font-weight="800" text-anchor="middle" fill="#0B1324">
+        <text x="904" y="394">1</text>
+        <text x="1014" y="314">2</text>
+        <text x="1124" y="234">3</text>
+      </g>
+
+      <rect x="963" y="222" width="102" height="30" rx="15" fill="#0B1324" stroke="#38BDF8" stroke-width="2"/>
+      <text x="1014" y="243" fill="#7DD3FC" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1">DEFAULT</text>
+
+      <line x1="846" y1="480" x2="1182" y2="480" stroke="#CBD5E1" stroke-opacity="0.35" stroke-width="2"/>
+
+      <g font-size="19" font-weight="600" text-anchor="middle" fill="#CBD5E1">
+        <text x="904" y="514">Light</text>
+        <text x="1014" y="514">Standard</text>
+        <text x="1124" y="514">Strict</text>
+      </g>
+      <g font-size="15" font-weight="500" text-anchor="middle" fill="#94A3B8">
+        <text x="904" y="538">~50%</text>
+        <text x="1014" y="538">~80%</text>
+        <text x="1124" y="538">100%</text>
+      </g>
+      <text x="1014" y="150" fill="#94A3B8" font-size="16" font-weight="700" text-anchor="middle" letter-spacing="3">STRICTNESS LEVELS</text>
+    </g>
+  </g>
+</svg>

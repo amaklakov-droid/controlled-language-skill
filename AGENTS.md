@@ -2,13 +2,14 @@
 
 This repository contains **Controlled Language**, an open-source Agent Skill
 (the [agentskills.io](https://agentskills.io) `SKILL.md` format). The skill
-makes an AI agent write, rewrite, and review technical documentation in a
-controlled language, in English or in other languages. The rules come from
-the principles of ASD-STE100 Simplified Technical English (STE), at three
-strictness levels. English gets the full rule set. Other languages get the
-32 universal rules and the rules of their language file. The project
-is not affiliated with ASD (Aerospace, Security and Defence Industries
-Association of Europe).
+makes an AI agent write, rewrite, and review any text in a controlled
+language. The text becomes clear, easy to read, and unambiguous.
+
+The rules come from the principles of ASD-STE100 Simplified Technical
+English (STE), at three strictness levels. English gets the full rule set.
+Other languages get the 32 universal rules and the rules of their language
+file. The project is not affiliated with ASD (Aerospace, Security and
+Defence Industries Association of Europe).
 
 ## Where the skill is
 
@@ -45,12 +46,12 @@ Full instructions: [docs/en/installation.md](docs/en/installation.md).
 
 Use the skill in these cases:
 
-- The user wants clear, simple, or translation-friendly text in
-  documentation, READMEs, procedures, help articles, release notes, UI text,
-  or warnings, in any language.
+- The user wants clear, simple, readable, unambiguous, or
+  translation-friendly text in any language: documentation, procedures,
+  explanations, emails, reports, policies, UI text, or warnings.
 - The user mentions ASD-STE100, STE, Simplified Technical English,
   controlled English, or "80% of the way to STE".
-- The user asks for a review of documentation for readability.
+- The user asks for a review of a text for readability.
 
 ## Rules for contributors (people and agents)
 

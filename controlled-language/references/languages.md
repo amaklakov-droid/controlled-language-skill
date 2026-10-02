@@ -1,6 +1,6 @@
 # Languages
 
-The skill works with technical text in any language. English is the native
+The skill works with text in any language. English is the native
 language of the approach. ASD-STE100 is a standard for English, and the full
 rule set of this skill comes from it. For other languages, the skill uses
 the same principles in a form that fits the language.

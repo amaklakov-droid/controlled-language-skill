@@ -5,15 +5,15 @@
     "url": "https://github.com/amaklakov-droid"
   },
   "metadata": {
-    "description": "Controlled Language: an agent skill that writes, rewrites, and reviews technical documentation in a controlled language (English and other languages), based on the principles of ASD-STE100, at three strictness levels.",
-    "version": "1.0.0"
+    "description": "Controlled Language: an agent skill that writes, rewrites, and reviews clear, readable, unambiguous text in any language (documentation, instructions, emails, reports, answers), based on the principles of ASD-STE100, at three strictness levels.",
+    "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "controlled-language",
       "source": "./",
-      "description": "Write, rewrite, and review docs in a controlled language (ASD-STE100 principles). English: full rules; other languages: the same principles with language files. Levels 1 Light, 2 Standard, 3 Strict.",
-      "version": "1.0.0",
+      "description": "Write, rewrite, and review clear, readable, unambiguous text in any language (ASD-STE100 principles). English: full rules; other languages: the same principles with language files. Levels 1 Light, 2 Standard, 3 Strict.",
+      "version": "1.1.0",
       "author": {
         "name": "Alexey Maklakov",
         "url": "https://github.com/amaklakov-droid"
@@ -23,16 +23,17 @@
       "license": "Apache-2.0",
       "category": "productivity",
       "keywords": [
+        "clear-writing",
+        "plain-language",
+        "controlled-language",
         "technical-writing",
         "documentation",
-        "controlled-language",
-        "plain-language",
         "readability",
         "multilingual"
       ],
       "tags": [
-        "technical-writing",
-        "documentation",
+        "clear-writing",
+        "plain-language",
         "controlled-language",
         "readability",
         "multilingual"

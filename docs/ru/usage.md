@@ -1,8 +1,8 @@
 <!--
 i18n:
   source: docs/en/usage.md
-  source_hash: feaba821c95c
-  status: reviewed
+  source_hash: d062da1dc4a4
+  status: draft
   translated_with: ai
   reviewed_by: [@amaklakov-droid]
 -->
@@ -30,7 +30,7 @@ i18n:
 ## Как запускается skill
 
 Большинство агентов запускают skill автоматически, если запрос касается
-понятного технического текста на любом языке, документации или
+понятного, легко читаемого или однозначного текста, документации или
 ASD-STE100. Skill можно вызвать и явно:
 
 - в Claude Code после установки плагина:

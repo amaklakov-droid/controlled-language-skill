@@ -1,30 +1,31 @@
 ---
 name: controlled-language
 description: >-
-  Write, rewrite, and review technical documentation and user instructions in
-  a controlled language, in English or any other language, at three
+  Write, rewrite, and review any text so that it is clear, easy to read, and
+  unambiguous: documentation, instructions, explanations, emails, reports,
+  policies, UI text, or answers, in English or any other language, at three
   strictness levels (1 Light ~50%, 2 Standard ~80%, 3 Strict ~100%), with
-  support for project-specific terms. English gets the full rule set based on
-  the principles of ASD-STE100 Simplified Technical English; other languages
-  get the same principles adapted to their grammar (language files for
-  Russian, German, French, Spanish). Use this skill whenever the user wants
-  clear, simple, unambiguous, or translation-friendly docs, READMEs, install
-  guides, procedures, help articles, release notes, UI text, or warnings;
-  mentions ASD-STE100, STE, Simplified Technical English, controlled or plain
-  language, or "80% of the way to STE"; asks to check or lint docs for
-  readability; or asks to explain something "in STE" — even without naming
-  the standard ("make these docs easier for non-native readers", "упрости
-  инструкцию", "перепиши документацию понятным языком").
+  support for project terms. The rules come from the principles of
+  ASD-STE100 Simplified Technical English; English gets the full rule set,
+  other languages get the same principles adapted to their grammar (language
+  files for Russian, German, French, Spanish). Use this skill whenever the
+  user asks for text that is clear, simple, plain, readable, unambiguous,
+  easy to translate, or easy for non-native readers; mentions ASD-STE100,
+  STE, Simplified Technical English, controlled or plain language, or "80% of
+  the way to STE"; asks to check or lint text for readability; or asks to
+  explain something "in STE" — even without naming the standard ("make this
+  clearer", "упрости текст", "перепиши понятным языком").
 license: Apache-2.0
 metadata:
-  version: "1.0.0"
+  version: "1.1.0"
   repository: https://github.com/amaklakov-droid/controlled-language-skill
 ---
 
 # Controlled Language
 
-Make technical text easy to read, hard to misread, and easy to translate, in
-any language. The rules come from the principles of ASD-STE100 Simplified
+Make any text easy to read, hard to misread, and easy to translate, in any
+language. This includes documentation, instructions, explanations, emails,
+reports, and answers. The rules come from the principles of ASD-STE100 Simplified
 Technical English, a controlled language that the aerospace industry made
 for maintenance manuals. English is the native language of the approach and
 gets the full rule set. Other languages get the same principles in a form
@@ -65,8 +66,8 @@ questions in the language of the user.
 
 ## Modes
 
-- **Write**: make a new document or section from facts, notes, code, or a
-  description of a feature.
+- **Write**: make a new text (a document, a section, a message, or an
+  answer) from facts, notes, code, or a description.
 - **Rewrite**: change existing text to the level. Keep all facts, values,
   conditions, and warnings. If you can edit files, edit the file and then
   summarize the changes.
@@ -105,8 +106,8 @@ documents in more than one language, and translation.
 
 | Level | Name | Approximate share of rules | Use for |
 | --- | --- | --- | --- |
-| 1 | Light | 50% | Blog-style guides, internal notes, a first cleanup of old docs. |
-| 2 | Standard | 80% (default) | User guides, READMEs, help centers, API docs. |
+| 1 | Light | 50% | Emails, chat answers, internal notes, blog-style guides, a first cleanup of old text. |
+| 2 | Standard | 80% (default) | User guides, READMEs, help centers, reports, policies, explanations, UI text. |
 | 3 | Strict | 100% | Safety-critical procedures, regulated products, text for machine translation into many languages. |
 
 - **Level 1** makes the structure clear: short sentences, imperative steps,

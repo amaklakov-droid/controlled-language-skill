@@ -171,7 +171,7 @@ The translator makes the draft. Do these steps for each file in
 ```text
 Translate the Markdown file below from English into {LANGUAGE} ({CODE}).
 The file is part of the documentation of "controlled-language", an agent
-skill for technical writing.
+skill for clear writing.
 
 Rules:
 1. Keep the Markdown structure: headings, lists, tables, block quotes,

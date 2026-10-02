@@ -1,7 +1,7 @@
 <!--
 i18n:
   source: docs/en/translating.md
-  source_hash: 438ea9c537bb
+  source_hash: 307b422ae255
   status: reviewed
   translated_with: ai
   reviewed_by: [@amaklakov-droid]
@@ -180,7 +180,7 @@ request.
 ```text
 Translate the Markdown file below from English into {LANGUAGE} ({CODE}).
 The file is part of the documentation of "controlled-language", an agent
-skill for technical writing.
+skill for clear writing.
 
 Rules:
 1. Keep the Markdown structure: headings, lists, tables, block quotes,

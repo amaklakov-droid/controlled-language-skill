@@ -1,11 +1,16 @@
-# Controlled Language: an agent skill for clear technical documentation in any language
+<p align="center">
+  <img src=".github/assets/banner.svg" alt="Controlled Language: clear, readable, unambiguous text in any language" width="100%">
+</p>
+
+# Controlled Language: an agent skill for clear, readable, unambiguous text in any language
 
 **English** · [Русский](docs/ru/README.md) · [Other languages](docs/LANGUAGES.md)
 
 **Controlled Language** is an open-source [Agent Skill](https://agentskills.io).
-It makes an AI agent write, rewrite, and review technical documentation in a
-controlled language, in English or in any other language. The rules come
-from the principles of **ASD-STE100 Simplified Technical English** (STE), the
+It makes an AI agent write, rewrite, and review text in a controlled
+language: documentation, instructions, explanations, emails, reports, and
+answers. The text becomes clear, easy to read, and unambiguous, in English
+or in any other language. The rules come from the principles of **ASD-STE100 Simplified Technical English** (STE), the
 controlled language of aerospace maintenance manuals. You select how strict
 the rules are: Level 1, 2, or 3.
 
@@ -36,6 +41,11 @@ read, and that is easy to translate. Readers who do not know the language
 well understand it. Machine translation and LLMs process it with fewer
 errors.
 
+The approach started in aircraft maintenance manuals, but it helps any text
+that must be understood correctly the first time. Examples are user guides,
+emails to customers, reports, policies, product texts, and the answers of AI
+agents.
+
 The idea for this skill came from a
 [post by Andrej Karpathy](https://x.com/karpathy/status/2105819303471976479).
 He asks LLMs to explain things in ASD-STE100, and sometimes asks for "80% of
@@ -63,7 +73,7 @@ your project: names of components, data types, and domain actions.
 | Sentence length: instruction / description | 25 / 30 words | 20 / 25 words | 20 / 25 words |
 | Vocabulary | Free, literal, specific | Simple common words, one meaning for each word | Only general words that ASD-STE100 approves, and your project terms |
 | Grammar | Active voice, imperative steps | Also: no phrasal verbs, no "should" or "may" | Also: simple verb forms only, no "-ing" forms |
-| Use for | Internal notes, a first cleanup | User guides, READMEs, API docs | Safety procedures, regulated products |
+| Use for | Emails, chat answers, internal notes, a first cleanup | User guides, READMEs, reports, explanations, UI text | Safety procedures, regulated products, text for translation |
 
 You can select the level in one of these places:
 
@@ -99,6 +109,7 @@ and tells you that the language has no file yet. To add a language, see
    - "Rewrite `docs/install.md` in controlled English, Level 2."
    - "Review the README at Level 3 and give me a report."
    - "Write the upgrade procedure for this CLI. Use controlled English."
+   - "Rewrite this email to the customer. Make it clear and unambiguous."
    - "Explain how OAuth works, 80% of the way to STE."
    - «Перепиши инструкцию `docs/ru/setup.md` понятным языком, уровень 3.»
 3. Optional: add a configuration file to your project. Copy

@@ -165,7 +165,9 @@ You can also change the level for a part of a document with a marker:
 | Text | Level |
 | --- | --- |
 | Internal notes, a draft, a first cleanup of old documentation | 1 |
+| Emails, messages, chat answers | 1 or 2 |
 | Blog posts and tutorials with a personal style | 1 |
+| Reports, policies, explanations, answers of AI agents | 2 |
 | User guides, help centers, READMEs, API references | 2 |
 | UI text, error messages, release notes | 2 |
 | Installation, upgrade, and recovery procedures | 2 or 3 |
