@@ -1,8 +1,8 @@
 <!--
 i18n:
   source: docs/en/installation.md
-  source_hash: 234ae7bb62f5
-  status: reviewed
+  source_hash: 9fe9e5a37d8c
+  status: draft
   translated_with: ai
   reviewed_by: [@amaklakov-droid]
 -->
@@ -57,6 +57,9 @@ npx skills add amaklakov-droid/controlled-language-skill -g -a codex
 
 Для обновления введите `/plugin marketplace update controlled-language-skill`.
 
+Claude Code ставит имя плагина перед именем skill. Чтобы вызвать skill
+напрямую, введите `/controlled-language:controlled-language <запрос>`.
+
 ### Как папку
 
 1. Клонируйте репозиторий:
@@ -80,8 +83,9 @@ npx skills add amaklakov-droid/controlled-language-skill -g -a codex
 > В macOS `cp` копирует только содержимое папки, если путь источника
 > заканчивается на `/`.
 
-Skill можно вызвать напрямую: `/controlled-language rewrite README.md at
-Level 3`.
+При установке папкой у имени skill нет префикса. Чтобы вызвать skill
+напрямую, введите `/controlled-language <запрос>`. Например:
+`/controlled-language rewrite README.md at Level 3`.
 
 ## Claude.ai и Claude Desktop
 

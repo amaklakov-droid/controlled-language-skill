@@ -21,10 +21,13 @@ integration (CI).
 ## How the skill starts
 
 Most agents start the skill automatically when the request is about clear
-technical English, documentation, or ASD-STE100. You can also start it
-directly:
+technical text in any language, documentation, or ASD-STE100. You can also
+start it directly:
 
-- In Claude Code: `/controlled-language <request>`.
+- In Claude Code, after the plugin installation:
+  `/controlled-language:controlled-language <request>`.
+- In Claude Code, after the installation as a folder:
+  `/controlled-language <request>`.
 - In other agents: write "Use the controlled-language skill" in the request.
 
 ## Modes

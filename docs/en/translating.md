@@ -221,7 +221,7 @@ applies the universal rules and the language file of the language, if the
 file exists. For example, give this request to your agent:
 
 ```text
-/controlled-language 2
+Use the controlled-language skill at Level 2.
 Review docs/<lang>/usage.md. The text is in <language>. Do not change code,
 links, or the i18n header.
 ```

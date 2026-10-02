@@ -1,8 +1,8 @@
 <!--
 i18n:
   source: docs/en/translating.md
-  source_hash: 0a0d62e096b8
-  status: reviewed
+  source_hash: 438ea9c537bb
+  status: draft
   translated_with: ai
   reviewed_by: [@amaklakov-droid]
 -->
@@ -229,7 +229,7 @@ controlled-language на уровне 2. К тексту не на англий�
 отправьте агенту такой запрос:
 
 ```text
-/controlled-language 2
+Use the controlled-language skill at Level 2.
 Review docs/<lang>/usage.md. The text is in <language>. Do not change code,
 links, or the i18n header.
 ```

@@ -1,8 +1,8 @@
 <!--
 i18n:
   source: docs/en/usage.md
-  source_hash: 836288b4e515
-  status: reviewed
+  source_hash: feaba821c95c
+  status: draft
   translated_with: ai
   reviewed_by: [@amaklakov-droid]
 -->
@@ -30,10 +30,12 @@ i18n:
 ## Как запускается skill
 
 Большинство агентов запускают skill автоматически, если запрос касается
-понятного технического английского, документации или ASD-STE100. Skill
-можно вызвать и явно:
+понятного технического текста на любом языке, документации или
+ASD-STE100. Skill можно вызвать и явно:
 
-- в Claude Code: `/controlled-language <запрос>`;
+- в Claude Code после установки плагина:
+  `/controlled-language:controlled-language <запрос>`;
+- в Claude Code после установки папкой: `/controlled-language <запрос>`;
 - в других агентах: напишите в запросе «Use the controlled-language skill».
 
 ## Режимы

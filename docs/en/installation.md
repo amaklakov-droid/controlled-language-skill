@@ -48,6 +48,10 @@ these commands in Claude Code:
 
 To get updates, type `/plugin marketplace update controlled-language-skill`.
 
+Claude Code puts the name of the plugin in front of the name of the skill.
+To start the skill directly, type
+`/controlled-language:controlled-language <request>`.
+
 ### As a folder
 
 1. Clone the repository:
@@ -71,8 +75,9 @@ To get updates, type `/plugin marketplace update controlled-language-skill`.
 > shows. On macOS, if the source path ends with `/`, `cp` copies only the
 > contents of the folder.
 
-You can start the skill directly: `/controlled-language rewrite README.md at
-Level 3`.
+When you install the skill as a folder, its name has no prefix. To start
+the skill directly, type `/controlled-language <request>`. For example:
+`/controlled-language rewrite README.md at Level 3`.
 
 ## Claude.ai and Claude Desktop
 
