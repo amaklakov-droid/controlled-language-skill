@@ -1,0 +1,73 @@
+name: Report skill output or rule feedback
+description: Report a bad result of the skill, or propose a change to a rule.
+title: "[Rule feedback]: "
+labels: ["rule-feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form if the skill gave a bad result, or if a rule is wrong or unclear.
+
+        - Remove confidential information from your text before you paste it.
+        - Do not paste text from the ASD-STE100 standard or from its dictionary. ASD owns the copyright of the standard. Describe the rule in your own words.
+  - type: input
+    id: agent
+    attributes:
+      label: Agent and model
+      description: The agent and the model that used the skill.
+      placeholder: Claude Code with Claude Sonnet
+    validations:
+      required: true
+  - type: dropdown
+    id: level
+    attributes:
+      label: Level
+      options:
+        - Level 1 (light)
+        - Level 2 (standard)
+        - Level 3 (strict)
+        - I do not know
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Mode
+      options:
+        - Write
+        - Rewrite
+        - Review
+        - Checker script (check.py)
+    validations:
+      required: false
+  - type: textarea
+    id: input-text
+    attributes:
+      label: Input text
+      description: The text or the request that you gave to the agent.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: actual-output
+    attributes:
+      label: Actual output
+      description: The result that the skill gave.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: expected-output
+    attributes:
+      label: Expected output
+      description: The result that you expected, and the reason.
+    validations:
+      required: true
+  - type: input
+    id: rule-id
+    attributes:
+      label: Rule ID
+      description: The ID of the rule in controlled-language/references/rules.md, if you know it.
+      placeholder: S2
+    validations:
+      required: false

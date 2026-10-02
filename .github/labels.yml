@@ -1,0 +1,60 @@
+# Label definitions for this repository.
+# To create or update the labels on GitHub, run: tools/sync_labels.sh
+# Format: one item for each label, with name, color (6 hex digits, no "#"), and description.
+# Put a value in double quotes if it contains ":" or "#".
+
+- name: "i18n"
+  color: "1d76db"
+  description: "Translations and the translation process"
+
+- name: "language-request"
+  color: "5319e7"
+  description: "Request for a new documentation language"
+
+- name: "needs-native-review"
+  color: "fbca04"
+  description: "The translation waits for a review by a native speaker"
+
+- name: "translation-outdated"
+  color: "d93f0b"
+  description: "The English source changed. A translation needs an update"
+
+- name: "lang:ru"
+  color: "c5def5"
+  description: "Russian translation (docs/ru/)"
+
+- name: "docs"
+  color: "0075ca"
+  description: "Documentation"
+
+- name: "rule-feedback"
+  color: "bfd4f2"
+  description: "Feedback about a rule or about the output of the skill"
+
+- name: "bug"
+  color: "d73a4a"
+  description: "Something does not work"
+
+- name: "enhancement"
+  color: "a2eeef"
+  description: "A new feature or an improvement"
+
+- name: "skill"
+  color: "0e8a16"
+  description: "Changes to the skill (controlled-language/)"
+
+- name: "checker"
+  color: "006b75"
+  description: "Checker script and its tests"
+
+- name: "infra"
+  color: "ededed"
+  description: "CI, workflows, templates, and tools"
+
+- name: "good first issue"
+  color: "7057ff"
+  description: "A good task for a new contributor"
+
+- name: "help wanted"
+  color: "008672"
+  description: "The maintainer asks for help with this task"

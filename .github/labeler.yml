@@ -1,0 +1,38 @@
+# Configuration for actions/labeler v5 (.github/workflows/labeler.yml).
+# The labeler adds a label when a pull request changes a file that matches one of its globs.
+
+docs:
+  - changed-files:
+      - any-glob-to-any-file:
+          - README.md
+          - docs/**
+
+# Translations: one entry for each language folder (not docs/en/).
+# When you add a language, add its folder here and add a "lang:<code>" label below.
+i18n:
+  - changed-files:
+      - any-glob-to-any-file:
+          - docs/LANGUAGES.md
+          - docs/ru/**
+
+"lang:ru":
+  - changed-files:
+      - any-glob-to-any-file:
+          - docs/ru/**
+
+skill:
+  - changed-files:
+      - any-glob-to-any-file:
+          - controlled-language/**
+
+checker:
+  - changed-files:
+      - any-glob-to-any-file:
+          - controlled-language/scripts/**
+          - tests/**
+
+infra:
+  - changed-files:
+      - any-glob-to-any-file:
+          - .github/**
+          - tools/**

@@ -1,0 +1,27 @@
+{
+  "name": "controlled-language",
+  "displayName": "Controlled Language",
+  "version": "1.0.0",
+  "description": "Write, rewrite, and review technical documentation in a controlled language, in English or any other language. English gets the full rule set based on the principles of ASD-STE100 Simplified Technical English; other languages get the same principles adapted. Three strictness levels, project terms, a review mode, and a checker script. Not affiliated with ASD.",
+  "author": {
+    "name": "Alexey Maklakov",
+    "url": "https://github.com/amaklakov-droid"
+  },
+  "homepage": "https://github.com/amaklakov-droid/controlled-language-skill",
+  "repository": "https://github.com/amaklakov-droid/controlled-language-skill",
+  "license": "Apache-2.0",
+  "keywords": [
+    "controlled-language",
+    "simplified-technical-english",
+    "technical-writing",
+    "documentation",
+    "plain-language",
+    "readability",
+    "localization",
+    "multilingual",
+    "docs-linter"
+  ],
+  "skills": [
+    "./controlled-language"
+  ]
+}

@@ -1,0 +1,75 @@
+name: Request a language
+description: Ask for a new language in the documentation, in the skill, or in both.
+title: "[Language]: "
+labels: ["i18n", "language-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to request a new language. A language can have two parts:
+
+        - a translation of the documentation;
+        - a language file for the skill: the rules for the grammar of the language (see `controlled-language/references/languages/`).
+
+        An AI model makes the first draft. Then native speakers review the draft. After the review, the maintainer publishes it.
+
+        - The full process: [Translate the documentation](https://github.com/amaklakov-droid/controlled-language-skill/blob/main/docs/en/translating.md).
+        - The current languages: [LANGUAGES.md](https://github.com/amaklakov-droid/controlled-language-skill/blob/main/docs/LANGUAGES.md).
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      description: The name of the language in English and in the language itself.
+      placeholder: German (Deutsch)
+    validations:
+      required: true
+  - type: input
+    id: code
+    attributes:
+      label: Language code (BCP 47)
+      description: The code is the name of the language folder. Use a BCP 47 code, for example `de` or `pt-BR`.
+      placeholder: de
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: What do you request?
+      description: Select one or both.
+      options:
+        - label: A translation of the documentation
+        - label: A language file for the skill (the rules for this language)
+  - type: textarea
+    id: audience
+    attributes:
+      label: Audience
+      description: Who will read the documentation in this language? Why is the translation necessary for them?
+      placeholder: Technical writers in German companies who use AI agents for documentation.
+    validations:
+      required: true
+  - type: dropdown
+    id: native-reviewer
+    attributes:
+      label: Are you a native speaker who can review the translation?
+      options:
+        - "Yes. I am a native speaker, and I can review the translation."
+        - "Yes, I am a native speaker. But I cannot review the translation now."
+        - "No. I am not a native speaker of this language."
+    validations:
+      required: true
+  - type: textarea
+    id: other-reviewers
+    attributes:
+      label: Other proposed reviewers
+      description: The GitHub handles of other native speakers who can review the translation. Write one handle on each line. Ask them before you add their handles.
+      placeholder: "@handle"
+    validations:
+      required: false
+  - type: checkboxes
+    id: review-process
+    attributes:
+      label: Review process
+      description: The maintainer accepts a language only if at least one native speaker agrees to review the translation.
+      options:
+        - label: I agree to the review process in docs/en/translating.md. An AI model makes the draft. Native speakers review the draft before the maintainer publishes it.
+          required: true

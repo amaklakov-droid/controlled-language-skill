@@ -1,0 +1,89 @@
+name: Translation freshness
+
+# After a change to the English sources (or to a translation), open, update,
+# or close ONE issue that lists the translations that need an update.
+on:
+  push:
+    branches: [main]
+    paths:
+      - README.md
+      - docs/**
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: i18n-outdated
+  cancel-in-progress: false
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Translation status
+        run: python tools/i18n_status.py check --github-summary >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Open, update, or close the issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          TITLE: Translations are out of date
+          LABEL: translation-outdated
+          GUIDE_URL: ${{ github.server_url }}/${{ github.repository }}/blob/main/docs/en/translating.md#step-8-keep-the-translation-current
+        run: |
+          set -euo pipefail
+
+          python tools/i18n_status.py check --list-outdated > outdated.tsv
+
+          number="$(gh issue list --state open --search "\"$TITLE\" in:title" \
+            --limit 100 --json number,title \
+            --jq "map(select(.title == \"$TITLE\")) | .[0].number // empty")"
+
+          if [ ! -s outdated.tsv ]; then
+            echo "All translations are current."
+            if [ -n "$number" ]; then
+              gh issue comment "$number" --body "All translations are current at ${GITHUB_SHA}. The workflow closes this issue."
+              gh issue close "$number" --reason completed
+            fi
+            exit 0
+          fi
+
+          {
+            echo "The English sources changed. These translation files need an update."
+            echo
+            echo "| Language | Translation | English source | State |"
+            echo "| --- | --- | --- | --- |"
+            while IFS=$'\t' read -r state lang file source; do
+              echo "| \`$lang\` | \`$file\` | \`$source\` | $state |"
+            done < outdated.tsv
+            echo
+            echo "- \`outdated\`: the English source changed after the last stamp."
+            echo "- \`missing\`: the language folder has no file for this English source."
+            echo "- \`untranslated\`: the file is still an English copy."
+            echo
+            echo "To update a translation, follow [step 8 of the translation guide]($GUIDE_URL)."
+            echo "The workflow \`.github/workflows/i18n-outdated.yml\` updates this issue. It closes the issue when all translations are current."
+          } > body.md
+
+          if [ -z "$number" ]; then
+            gh label create "$LABEL" --color d93f0b \
+              --description "The English source changed. A translation needs an update" 2>/dev/null || true
+            gh issue create --title "$TITLE" --label "$LABEL" --body-file body.md
+            exit 0
+          fi
+
+          old_body="$(gh issue view "$number" --json body --jq .body | tr -d '\r')"
+          if [ "$old_body" = "$(tr -d '\r' < body.md)" ]; then
+            echo "Issue #$number is already up to date."
+          else
+            gh issue edit "$number" --body-file body.md
+            gh issue comment "$number" --body "The list changed at ${GITHUB_SHA}."
+          fi

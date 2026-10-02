@@ -1,0 +1,50 @@
+name: Suggest a documentation change
+description: Propose a change to the documentation if you cannot open a pull request.
+title: "[Docs]: "
+labels: ["docs"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If you can open a pull request, use a pull request. The maintainer can merge it faster. See [CONTRIBUTING.md](https://github.com/amaklakov-droid/controlled-language-skill/blob/main/CONTRIBUTING.md).
+
+        English is the source language. A change to an English page also changes its translations later.
+  - type: input
+    id: page
+    attributes:
+      label: Page or URL
+      description: The file path or the URL of the page.
+      placeholder: docs/en/usage.md
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language of the page
+      options:
+        - English (source)
+        - Русский (Russian)
+        - Other language (write it in the reason)
+    validations:
+      required: true
+  - type: textarea
+    id: current-text
+    attributes:
+      label: Current text
+      description: Copy the text that you want to change. If you propose new text, write the section where it goes.
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-text
+    attributes:
+      label: Proposed text
+      description: Write the new text. For English pages, use controlled English at Level 2.
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason
+      description: Why is the change necessary? For example, the text is wrong, unclear, or out of date.
+    validations:
+      required: true

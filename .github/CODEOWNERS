@@ -1,0 +1,18 @@
+# Code owners get a review request for each pull request that changes their files.
+# The last pattern that matches a file takes precedence.
+# See https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owner of all files.
+* @amaklakov-droid
+
+# Language reviewers.
+# Each language folder has its own line. Add the native-speaker reviewers of the
+# language after the maintainer. Examples:
+#
+#   /docs/de/ @amaklakov-droid @german-reviewer
+#   /docs/pt-BR/ @amaklakov-droid @portuguese-reviewer @second-reviewer
+#
+# To make an approval from a code owner necessary, turn on
+# "Require review from Code Owners" in the branch protection rule for main.
+
+/docs/ru/ @amaklakov-droid

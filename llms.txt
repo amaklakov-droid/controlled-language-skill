@@ -1,0 +1,34 @@
+# Controlled Language
+
+> Open-source Agent Skill (SKILL.md format, agentskills.io standard) that makes Claude, OpenAI Codex, GitHub Copilot, Cursor, Gemini CLI, and other AI agents write, rewrite, and review technical documentation in a controlled language, in English or any other language, based on the principles of ASD-STE100 Simplified Technical English. English is the native language of the approach (all 39 rules, approved vocabulary at Level 3); other languages get 32 universal rules plus language files (Russian, German, French, Spanish). Three strictness levels: 1 Light (about 50% of the rules), 2 Standard (about 80%, default), 3 Strict (100%). Supports project terms (technical nouns and verbs), a review mode with rule IDs, and a stdlib-only Python checker for CI. Apache-2.0. Not affiliated with or endorsed by ASD; does not contain the ASD-STE100 dictionary.
+
+Install: `npx skills add amaklakov-droid/controlled-language-skill` or, in Claude Code, `/plugin marketplace add amaklakov-droid/controlled-language-skill` then `/plugin install controlled-language@controlled-language-skill`. For chat models without skills: prompts/system-prompt.md.
+
+Inspired by Andrej Karpathy's post about asking LLMs for ASD-STE100, or "80% of the way" to it: https://x.com/karpathy/status/2105819303471976479
+
+## Skill
+
+- [SKILL.md](https://github.com/amaklakov-droid/controlled-language-skill/blob/main/controlled-language/SKILL.md): workflow, levels, rules at a glance, output formats
+- [rules.md](https://github.com/amaklakov-droid/controlled-language-skill/blob/main/controlled-language/references/rules.md): rule catalog with IDs and the level matrix
+- [word-choices.md](https://github.com/amaklakov-droid/controlled-language-skill/blob/main/controlled-language/references/word-choices.md): English words to avoid and replacements
+- [configuration.md](https://github.com/amaklakov-droid/controlled-language-skill/blob/main/controlled-language/references/configuration.md): project file, front matter, markers
+- [languages.md](https://github.com/amaklakov-droid/controlled-language-skill/blob/main/controlled-language/references/languages.md): how the skill works with each language
+- [languages/](https://github.com/amaklakov-droid/controlled-language-skill/tree/main/controlled-language/references/languages): language files (ru, de, fr, es) and a template
+- [examples.md](https://github.com/amaklakov-droid/controlled-language-skill/blob/main/controlled-language/references/examples.md): calibration examples for each level
+- [check.py](https://github.com/amaklakov-droid/controlled-language-skill/blob/main/controlled-language/scripts/check.py): checker script
+
+## Documentation
+
+- [README](https://github.com/amaklakov-droid/controlled-language-skill/blob/main/README.md): overview, levels, installation, legal notice
+- [Installation](https://github.com/amaklakov-droid/controlled-language-skill/blob/main/docs/en/installation.md): each agent, step by step
+- [Usage](https://github.com/amaklakov-droid/controlled-language-skill/blob/main/docs/en/usage.md): modes, checker, CI
+- [Levels](https://github.com/amaklakov-droid/controlled-language-skill/blob/main/docs/en/levels.md): what changes at each level
+- [Configuration](https://github.com/amaklakov-droid/controlled-language-skill/blob/main/docs/en/configuration.md): .controlled-language.yml, glossary
+- [Translating](https://github.com/amaklakov-droid/controlled-language-skill/blob/main/docs/en/translating.md): translation process and language files
+- [Русская документация](https://github.com/amaklakov-droid/controlled-language-skill/blob/main/docs/ru/README.md)
+
+## Optional
+
+- [System prompt](https://github.com/amaklakov-droid/controlled-language-skill/blob/main/prompts/system-prompt.md): one-file version for chat models
+- [AGENTS.md](https://github.com/amaklakov-droid/controlled-language-skill/blob/main/AGENTS.md): repository guide for AI agents and contributors
+- [NOTICE](https://github.com/amaklakov-droid/controlled-language-skill/blob/main/NOTICE): trademark notice and acknowledgement

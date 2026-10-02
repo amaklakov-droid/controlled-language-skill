@@ -1,0 +1,73 @@
+name: Volunteer as a native-speaker reviewer
+description: Offer to review translations of the documentation into your native language.
+title: "[Reviewer]: "
+labels: ["i18n", "help wanted"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your help.
+
+        A reviewer compares a translation with the English source on GitHub. The reviewer corrects the meaning, the terms, and the style. Then the reviewer approves the pull request. Read [Translate the documentation](https://github.com/amaklakov-droid/controlled-language-skill/blob/main/docs/en/translating.md) for the full process.
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      description: The language that you can review and its BCP 47 code.
+      placeholder: Deutsch (de)
+    validations:
+      required: true
+  - type: dropdown
+    id: proficiency
+    attributes:
+      label: Proficiency in this language
+      options:
+        - Native speaker
+        - Native speaker and professional translator
+        - Bilingual (native level in this language and in another language)
+    validations:
+      required: true
+  - type: dropdown
+    id: english
+    attributes:
+      label: Proficiency in English
+      description: A reviewer must understand the English source.
+      options:
+        - Native or bilingual
+        - Advanced (C1 or C2)
+        - Upper intermediate (B2)
+    validations:
+      required: true
+  - type: input
+    id: handle
+    attributes:
+      label: GitHub handle
+      description: The handle that GitHub asks for reviews. It is usually your own handle.
+      placeholder: "@your-handle"
+    validations:
+      required: true
+  - type: checkboxes
+    id: handle-confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: The maintainer can add this handle to `.github/CODEOWNERS` and to `docs/LANGUAGES.md`. GitHub then asks this handle to review pull requests for the language.
+          required: true
+  - type: dropdown
+    id: availability
+    attributes:
+      label: Availability
+      options:
+        - Up to 2 reviews each month
+        - 3 to 5 reviews each month
+        - More than 5 reviews each month
+        - Only the first translation of the language
+    validations:
+      required: true
+  - type: textarea
+    id: experience
+    attributes:
+      label: Experience
+      description: Your experience with translation or technical writing. This field is optional.
+    validations:
+      required: false

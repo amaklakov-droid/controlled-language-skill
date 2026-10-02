@@ -1,0 +1,7 @@
+.DS_Store
+.ontakt/
+__pycache__/
+*.pyc
+.venv/
+*-workspace/
+*.skill

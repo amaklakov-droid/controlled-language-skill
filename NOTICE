@@ -1,0 +1,28 @@
+controlled-language
+Copyright 2026 Alexey Maklakov and contributors
+
+This product is licensed under the Apache License, Version 2.0.
+See the LICENSE file.
+
+Trademark and copyright notice
+------------------------------
+ASD-STE100 Simplified Technical English is a copyright and a trademark of
+ASD (Aerospace, Security and Defence Industries Association of Europe),
+Brussels, Belgium. European Union Trade Mark No. 017966390.
+
+This project is not affiliated with, endorsed by, or certified by ASD or the
+ASD Simplified Technical English Maintenance Group (STEMG). It does not
+contain the text or the dictionary of the ASD-STE100 standard. The rules in
+this project describe the publicly known principles of controlled technical
+English in original wording. Text that this project helps to produce is not
+certified as compliant with ASD-STE100.
+
+ASD gives the official standard free of charge on request:
+https://www.asd-ste100.org/
+
+Acknowledgement
+---------------
+The idea for this project came from a post by Andrej Karpathy
+(2 October 2026). The post suggests that you ask an LLM to write in
+ASD-STE100, or "80% of the way" to it:
+https://x.com/karpathy/status/2105819303471976479

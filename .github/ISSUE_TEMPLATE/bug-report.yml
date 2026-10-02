@@ -1,0 +1,87 @@
+name: Report a bug
+description: Report a problem with the installation of the skill or with the checker script.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for a problem with the installation or with a script. If the skill gave a bad result, use the form "Report skill output or rule feedback".
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - Installation of the skill
+        - Checker script (controlled-language/scripts/check.py)
+        - Translation tool (tools/i18n_status.py)
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: agent
+    attributes:
+      label: Agent
+      description: The agent and its version.
+      placeholder: Claude Code 2.x on the command line
+    validations:
+      required: true
+  - type: dropdown
+    id: install-method
+    attributes:
+      label: Installation method
+      options:
+        - The skills installer (npx skills add)
+        - Claude Code plugin
+        - Copy of the skill folder
+        - Upload to Claude.ai or Claude Desktop
+        - Claude API or Claude Agent SDK
+        - System prompt (prompts/system-prompt.md)
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: macOS 15, Ubuntu 24.04, Windows 11
+    validations:
+      required: true
+  - type: input
+    id: python
+    attributes:
+      label: Python version
+      description: Only for problems with a script. Run `python3 --version`.
+      placeholder: Python 3.12.4
+    validations:
+      required: false
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Paste the error messages or the command output. GitHub shows this text as code.
+      render: shell
+    validations:
+      required: false
