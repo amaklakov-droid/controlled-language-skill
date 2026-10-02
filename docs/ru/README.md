@@ -2,9 +2,9 @@
 i18n:
   source: README.md
   source_hash: b2871c3f64a8
-  status: draft
+  status: reviewed
   translated_with: ai
-  reviewed_by: []
+  reviewed_by: [@amaklakov-droid]
 -->
 
 # Controlled Language: agent skill для понятной технической документации на любом языке

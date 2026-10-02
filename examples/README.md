@@ -33,7 +33,7 @@ the examples.
 
 **russian-2fa (Level 2, Russian)**
 
-- Level 2. The universal rules and the Russian rules (`ru.md`, draft). The
+- Level 2. The universal rules and the Russian rules (`ru.md`). The
   ASD-STE100 vocabulary rules apply only to English.
 - Questions: the exact name of the code field, where the service shows the
   backup codes, and which authenticator apps work.

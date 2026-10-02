@@ -2,9 +2,9 @@
 i18n:
   source: docs/en/levels.md
   source_hash: c9d469b0d23a
-  status: draft
+  status: reviewed
   translated_with: ai
-  reviewed_by: []
+  reviewed_by: [@amaklakov-droid]
 -->
 
 # Уровни

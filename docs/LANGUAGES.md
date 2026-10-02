@@ -20,7 +20,7 @@ A language file adds the rules for one more language. The files are in
 
 | Language | Code | File | Status | Reviewed by |
 | --- | --- | --- | --- | --- |
-| Русский (Russian) | `ru` | [ru.md](../controlled-language/references/languages/ru.md) | draft | — |
+| Русский (Russian) | `ru` | [ru.md](../controlled-language/references/languages/ru.md) | reviewed | [@amaklakov-droid](https://github.com/amaklakov-droid) |
 | Deutsch (German) | `de` | [de.md](../controlled-language/references/languages/de.md) | draft | — |
 | Français (French) | `fr` | [fr.md](../controlled-language/references/languages/fr.md) | draft | — |
 | Español (Spanish) | `es` | [es.md](../controlled-language/references/languages/es.md) | draft | — |
@@ -39,7 +39,7 @@ English (`en`) is the source language. Each language has 6 files to translate.
 
 | Language | Code | Reviewed | Draft | Outdated | Missing | Reviewed by |
 | --- | --- | ---: | ---: | ---: | ---: | --- |
-| [Русский (Russian)](ru/README.md) | `ru` | 0 | 6 | 0 | 0 | — |
+| [Русский (Russian)](ru/README.md) | `ru` | 6 | 0 | 0 | 0 | @amaklakov-droid |
 
 <!-- i18n-table:end -->
 

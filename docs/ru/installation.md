@@ -2,9 +2,9 @@
 i18n:
   source: docs/en/installation.md
   source_hash: 234ae7bb62f5
-  status: draft
+  status: reviewed
   translated_with: ai
-  reviewed_by: []
+  reviewed_by: [@amaklakov-droid]
 -->
 
 # Установка

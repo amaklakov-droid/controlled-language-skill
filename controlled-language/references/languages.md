@@ -66,7 +66,7 @@ named with the language code: `ru.md`, `de.md`, `pt-BR.md`.
 
 | File | Language | Status |
 | --- | --- | --- |
-| [languages/ru.md](languages/ru.md) | Russian | draft |
+| [languages/ru.md](languages/ru.md) | Russian | reviewed |
 | [languages/de.md](languages/de.md) | German | draft |
 | [languages/fr.md](languages/fr.md) | French | draft |
 | [languages/es.md](languages/es.md) | Spanish | draft |
@@ -148,5 +148,5 @@ time. Then:
 
 At the end of the output, add one short line in the language of the user.
 The line tells which rules you applied. For example: "Level 2. Universal
-rules and the Russian language rules (ru.md, draft). The vocabulary rules
+rules and the Russian language rules (ru.md). The vocabulary rules
 of ASD-STE100 apply only to English."

@@ -8,8 +8,8 @@ Language rules for Russian. Use them together with the universal rules in
 | --- | --- |
 | Code | `ru` |
 | Script | Cyrillic |
-| Status | draft: waits for a native-speaker review |
-| Reviewers | — |
+| Status | reviewed |
+| Reviewers | [@amaklakov-droid](https://github.com/amaklakov-droid) |
 
 ## Instruction form
 

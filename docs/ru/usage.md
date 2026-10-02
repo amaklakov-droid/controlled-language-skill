@@ -2,9 +2,9 @@
 i18n:
   source: docs/en/usage.md
   source_hash: 836288b4e515
-  status: draft
+  status: reviewed
   translated_with: ai
-  reviewed_by: []
+  reviewed_by: [@amaklakov-droid]
 -->
 
 # Использование

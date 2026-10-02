@@ -2,9 +2,9 @@
 i18n:
   source: docs/en/configuration.md
   source_hash: 5a2dc047c61f
-  status: draft
+  status: reviewed
   translated_with: ai
-  reviewed_by: []
+  reviewed_by: [@amaklakov-droid]
 -->
 
 # Конфигурация
