@@ -2,7 +2,7 @@
 i18n:
   source: docs/en/levels.md
   source_hash: caa7f756c14f
-  status: draft
+  status: reviewed
   translated_with: ai
   reviewed_by: [@amaklakov-droid]
 -->
