@@ -2,7 +2,7 @@
 i18n:
   source: docs/en/translating.md
   source_hash: 438ea9c537bb
-  status: draft
+  status: reviewed
   translated_with: ai
   reviewed_by: [@amaklakov-droid]
 -->
