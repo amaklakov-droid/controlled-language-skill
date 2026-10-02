@@ -7,18 +7,44 @@ docs:
           - README.md
           - docs/**
 
-# Translations: one entry for each language folder (not docs/en/).
-# When you add a language, add its folder here and add a "lang:<code>" label below.
+# Languages: translations of the documentation (one folder for each
+# language, not docs/en/) and the language files of the skill.
+# When you add a language, add its docs folder here, and add a
+# "lang:<code>" entry below with its docs folder and its language file.
 i18n:
   - changed-files:
       - any-glob-to-any-file:
           - docs/LANGUAGES.md
           - docs/ru/**
+          - docs/de/**
+          - docs/fr/**
+          - docs/es/**
+          - controlled-language/references/languages.md
+          - controlled-language/references/languages/**
 
 "lang:ru":
   - changed-files:
       - any-glob-to-any-file:
           - docs/ru/**
+          - controlled-language/references/languages/ru.md
+
+"lang:de":
+  - changed-files:
+      - any-glob-to-any-file:
+          - docs/de/**
+          - controlled-language/references/languages/de.md
+
+"lang:fr":
+  - changed-files:
+      - any-glob-to-any-file:
+          - docs/fr/**
+          - controlled-language/references/languages/fr.md
+
+"lang:es":
+  - changed-files:
+      - any-glob-to-any-file:
+          - docs/es/**
+          - controlled-language/references/languages/es.md
 
 skill:
   - changed-files:
