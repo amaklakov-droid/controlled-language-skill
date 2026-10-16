@@ -1,8 +1,8 @@
 <!--
 i18n:
   source: README.md
-  source_hash: 2f1dd2400a1a
-  status: reviewed
+  source_hash: 85066269fe91
+  status: draft
   translated_with: ai
   reviewed_by: [@amaklakov-droid]
 -->
@@ -226,6 +226,13 @@ tools/i18n_status.py             Инструмент для статуса пе
 [запрос на язык](https://github.com/amaklakov-droid/controlled-language-skill/issues/new?template=language-request.yml).
 Первый черновик делает AI. Затем его проверяют носители языка. После
 проверки мы публикуем результат. Подробнее — в [translating.md](translating.md).
+
+**Ищем носителей языков.** Нам нужны носители немецкого, испанского,
+французского, португальского, китайского (упрощённое и традиционное письмо),
+японского, корейского и арабского. Они проверяют или пишут языковой файл для
+своего языка. Проверка занимает около часа. См.
+[открытые задачи для носителей языков](https://github.com/amaklakov-droid/controlled-language-skill/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22+label%3Ai18n)
+и [Какие языки мы ищем](../LANGUAGES.md#languages-we-look-for).
 
 ## Правовая информация
 

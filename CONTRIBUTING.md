@@ -19,9 +19,10 @@ controlled English at Level 2.
 
 - **Fix the documentation.** Correct errors and unclear text. Open a pull
   request with the change.
-- **Translate the documentation.** Add a language, or review a translation
-  in your native language. See
-  [Translate the documentation](docs/en/translating.md).
+- **Add your language.** Review or write the language file of the skill
+  for your native language, or translate the documentation. See
+  [Translate the documentation](docs/en/translating.md) and the
+  [open issues for native speakers](https://github.com/amaklakov-droid/controlled-language-skill/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22+label%3Ai18n).
 - **Report skill output.** If the skill gives a bad result or a rule is
   wrong, open a
   [rule feedback issue](https://github.com/amaklakov-droid/controlled-language-skill/issues/new?template=rule-feedback.yml).

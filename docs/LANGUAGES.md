@@ -29,6 +29,31 @@ A "draft" file did not get a review from a native speaker. To review or to
 add a language file, see
 [Language rules for the skill](en/translating.md#language-rules-for-the-skill).
 
+## Languages we look for
+
+We look for native speakers of these languages. A native speaker reviews
+the language file, or writes it when the skill has no file yet. A review
+takes about one hour. The author and the reviewers get their names in
+the file, on this page, and in the release notes.
+
+| Language | Code | What we need | Issues |
+| --- | --- | --- | --- |
+| Deutsch (German) | `de` | Review the draft of `de.md` | [`lang:de`](https://github.com/amaklakov-droid/controlled-language-skill/issues?q=is%3Aissue+is%3Aopen+label%3A%22lang%3Ade%22) |
+| Español (Spanish) | `es` | Review the draft of `es.md` | [`lang:es`](https://github.com/amaklakov-droid/controlled-language-skill/issues?q=is%3Aissue+is%3Aopen+label%3A%22lang%3Aes%22) |
+| Français (French) | `fr` | Review the draft of `fr.md` | [`lang:fr`](https://github.com/amaklakov-droid/controlled-language-skill/issues?q=is%3Aissue+is%3Aopen+label%3A%22lang%3Afr%22) |
+| Português (Portuguese), Brazil and Portugal | `pt` | Write and review `pt.md` | [`lang:pt`](https://github.com/amaklakov-droid/controlled-language-skill/issues?q=is%3Aissue+is%3Aopen+label%3A%22lang%3Apt%22) |
+| 中文 (Chinese), Simplified | `zh-Hans` | Write and review `zh-Hans.md` | [`lang:zh-Hans`](https://github.com/amaklakov-droid/controlled-language-skill/issues?q=is%3Aissue+is%3Aopen+label%3A%22lang%3Azh-Hans%22) |
+| 中文 (Chinese), Traditional | `zh-Hant` | Write and review `zh-Hant.md` | [`lang:zh-Hant`](https://github.com/amaklakov-droid/controlled-language-skill/issues?q=is%3Aissue+is%3Aopen+label%3A%22lang%3Azh-Hant%22) |
+| 日本語 (Japanese) | `ja` | Write and review `ja.md` | [`lang:ja`](https://github.com/amaklakov-droid/controlled-language-skill/issues?q=is%3Aissue+is%3Aopen+label%3A%22lang%3Aja%22) |
+| 한국어 (Korean) | `ko` | Write and review `ko.md` | [`lang:ko`](https://github.com/amaklakov-droid/controlled-language-skill/issues?q=is%3Aissue+is%3Aopen+label%3A%22lang%3Ako%22) |
+| العربية (Arabic), Modern Standard Arabic | `ar` | Write and review `ar.md` | [`lang:ar`](https://github.com/amaklakov-droid/controlled-language-skill/issues?q=is%3Aissue+is%3Aopen+label%3A%22lang%3Aar%22) |
+
+The issue of each language lists the questions that the file must answer.
+To start, comment in the issue of your language, or open the form
+[Volunteer as a native-speaker reviewer](https://github.com/amaklakov-droid/controlled-language-skill/issues/new?template=reviewer-signup.yml).
+For a language that is not in the table, open a
+[language request](https://github.com/amaklakov-droid/controlled-language-skill/issues/new?template=language-request.yml).
+
 ## Documentation translations
 
 <!-- i18n-table:start -->
@@ -39,7 +64,7 @@ English (`en`) is the source language. Each language has 6 files to translate.
 
 | Language | Code | Reviewed | Draft | Outdated | Missing | Reviewed by |
 | --- | --- | ---: | ---: | ---: | ---: | --- |
-| [Русский (Russian)](ru/README.md) | `ru` | 6 | 0 | 0 | 0 | @amaklakov-droid |
+| [Русский (Russian)](ru/README.md) | `ru` | 5 | 1 | 0 | 0 | @amaklakov-droid |
 
 <!-- i18n-table:end -->
 

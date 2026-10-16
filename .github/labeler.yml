@@ -19,6 +19,12 @@ i18n:
           - docs/de/**
           - docs/fr/**
           - docs/es/**
+          - docs/pt/**
+          - docs/zh-Hans/**
+          - docs/zh-Hant/**
+          - docs/ja/**
+          - docs/ko/**
+          - docs/ar/**
           - controlled-language/references/languages.md
           - controlled-language/references/languages/**
 
@@ -45,6 +51,42 @@ i18n:
       - any-glob-to-any-file:
           - docs/es/**
           - controlled-language/references/languages/es.md
+
+"lang:pt":
+  - changed-files:
+      - any-glob-to-any-file:
+          - docs/pt/**
+          - controlled-language/references/languages/pt.md
+
+"lang:zh-Hans":
+  - changed-files:
+      - any-glob-to-any-file:
+          - docs/zh-Hans/**
+          - controlled-language/references/languages/zh-Hans.md
+
+"lang:zh-Hant":
+  - changed-files:
+      - any-glob-to-any-file:
+          - docs/zh-Hant/**
+          - controlled-language/references/languages/zh-Hant.md
+
+"lang:ja":
+  - changed-files:
+      - any-glob-to-any-file:
+          - docs/ja/**
+          - controlled-language/references/languages/ja.md
+
+"lang:ko":
+  - changed-files:
+      - any-glob-to-any-file:
+          - docs/ko/**
+          - controlled-language/references/languages/ko.md
+
+"lang:ar":
+  - changed-files:
+      - any-glob-to-any-file:
+          - docs/ar/**
+          - controlled-language/references/languages/ar.md
 
 skill:
   - changed-files:

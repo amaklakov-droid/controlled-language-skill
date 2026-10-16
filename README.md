@@ -218,6 +218,13 @@ To start, open a
 An AI makes the first draft. Then native speakers review it. Then we publish
 it. See [docs/en/translating.md](docs/en/translating.md).
 
+**Native speakers wanted.** We look for native speakers of German, Spanish,
+French, Portuguese, Chinese (Simplified and Traditional), Japanese, Korean,
+and Arabic. They review or write the language file for their language. A
+review takes about one hour. See the
+[open issues for native speakers](https://github.com/amaklakov-droid/controlled-language-skill/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22+label%3Ai18n)
+and [Languages we look for](docs/LANGUAGES.md#languages-we-look-for).
+
 ## Legal notice
 
 - **License.** This project is licensed under the
