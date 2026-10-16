@@ -4,7 +4,12 @@
 
 # Controlled Language: an agent skill for clear, readable, unambiguous text in any language
 
-**English** · [Русский](docs/ru/README.md) · [Other languages](docs/LANGUAGES.md)
+[![Version](https://img.shields.io/badge/version-1.1.0-blue)](https://github.com/amaklakov-droid/controlled-language-skill/releases)
+[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-green)](LICENSE)
+[![Help wanted](https://img.shields.io/github/issues/amaklakov-droid/controlled-language-skill/help%20wanted?label=help%20wanted&color=008672)](https://github.com/amaklakov-droid/controlled-language-skill/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22+label%3Ai18n)
+[![Native speakers wanted](https://img.shields.io/badge/native%20speakers-wanted-fbca04)](https://github.com/amaklakov-droid/controlled-language-skill/issues/4)
+
+**English** · [Русский](docs/ru/README.md) · [Other languages](docs/LANGUAGES.md) · [Add your language](docs/LANGUAGES.md#languages-we-look-for)
 
 **Controlled Language** is an open-source [Agent Skill](https://agentskills.io).
 It makes an AI agent write, rewrite, and review text in a controlled
@@ -19,6 +24,13 @@ the rules are: Level 1, 2, or 3.
 - **Other languages** get the same principles in a form that fits their
   grammar. Language files add rules for Russian, German, French, and
   Spanish. Native speakers can add more.
+
+> [!IMPORTANT]
+> **Native speakers wanted.** We look for native speakers of German,
+> Spanish, French, Portuguese, Chinese, Japanese, Korean, and Arabic. You
+> review or write the rules for your language. A review takes about one
+> hour, and your name stays in the project. Start in
+> [issue #4](https://github.com/amaklakov-droid/controlled-language-skill/issues/4).
 
 ```bash
 npx skills add amaklakov-droid/controlled-language-skill
@@ -90,7 +102,7 @@ See [docs/en/levels.md](docs/en/levels.md).
 | Rules | All 39 rules | 32 universal rules and the rules of the language file |
 | Levels | 1, 2, 3 | 1, 2, 3 |
 | Level 3 vocabulary | Only general words that ASD-STE100 approves | No vocabulary control: no approved dictionary exists |
-| Language rules | Built in | [Russian](controlled-language/references/languages/ru.md), [German](controlled-language/references/languages/de.md), [French](controlled-language/references/languages/fr.md), [Spanish](controlled-language/references/languages/es.md) |
+| Language rules | Built in | A language file for each language (see the table below) |
 
 The universal rules control the structure. Examples are sentence length,
 one instruction in each sentence, the condition first, active voice, one
@@ -99,8 +111,25 @@ grammar of each language. For example, the Russian rules replace «произв�
 настройку» with «настройте».
 
 For a language without a language file, the skill uses the universal rules
-and tells you that the language has no file yet. To add a language, see
+and tells you that the language has no file yet.
+
+**Language files and their status.** A native speaker reviews each file.
+
+| Language | File | Status | How to help |
+| --- | --- | --- | --- |
+| Russian | [ru.md](controlled-language/references/languages/ru.md) | Reviewed | Report problems |
+| German | [de.md](controlled-language/references/languages/de.md) | Draft | [Review it](https://github.com/amaklakov-droid/controlled-language-skill/issues/1) |
+| French | [fr.md](controlled-language/references/languages/fr.md) | Draft | [Review it](https://github.com/amaklakov-droid/controlled-language-skill/issues/2) |
+| Spanish | [es.md](controlled-language/references/languages/es.md) | Draft | [Review it](https://github.com/amaklakov-droid/controlled-language-skill/issues/3) |
+| Portuguese | — | Wanted | [Write it](https://github.com/amaklakov-droid/controlled-language-skill/issues/5) |
+| Chinese, Simplified and Traditional | — | Wanted | [Write it](https://github.com/amaklakov-droid/controlled-language-skill/issues/6) |
+| Japanese | — | Wanted | [Write it](https://github.com/amaklakov-droid/controlled-language-skill/issues/7) |
+| Korean | — | Wanted | [Write it](https://github.com/amaklakov-droid/controlled-language-skill/issues/8) |
+| Arabic | — | Wanted | [Write it](https://github.com/amaklakov-droid/controlled-language-skill/issues/9) |
+
+To add another language, see
 [docs/en/translating.md](docs/en/translating.md#language-rules-for-the-skill).
+The full status is in [docs/LANGUAGES.md](docs/LANGUAGES.md).
 
 ## Quick start
 

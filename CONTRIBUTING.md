@@ -34,6 +34,11 @@ controlled English at Level 2.
 - **Report a bug.** If the installation or the checker script fails, open a
   [bug report](https://github.com/amaklakov-droid/controlled-language-skill/issues/new?template=bug-report.yml).
 
+New to the project? The page
+[Contribute to controlled-language-skill](https://github.com/amaklakov-droid/controlled-language-skill/contribute)
+lists the issues with the label `good first issue`. A review of a language
+file is one of them.
+
 If you cannot open a pull request, use the form
 [Suggest a documentation change](https://github.com/amaklakov-droid/controlled-language-skill/issues/new?template=docs-change.yml).
 

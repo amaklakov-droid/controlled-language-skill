@@ -1,8 +1,8 @@
 <!--
 i18n:
   source: README.md
-  source_hash: 85066269fe91
-  status: reviewed
+  source_hash: 595a3691e57d
+  status: draft
   translated_with: ai
   reviewed_by: [@amaklakov-droid]
 -->
@@ -13,7 +13,12 @@ i18n:
 
 # Controlled Language: agent skill для понятных, легко читаемых и однозначных текстов на любом языке
 
-[English](../../README.md) · **Русский** · [Другие языки](../LANGUAGES.md)
+[![Version](https://img.shields.io/badge/version-1.1.0-blue)](https://github.com/amaklakov-droid/controlled-language-skill/releases)
+[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-green)](../../LICENSE)
+[![Help wanted](https://img.shields.io/github/issues/amaklakov-droid/controlled-language-skill/help%20wanted?label=help%20wanted&color=008672)](https://github.com/amaklakov-droid/controlled-language-skill/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22+label%3Ai18n)
+[![Native speakers wanted](https://img.shields.io/badge/native%20speakers-wanted-fbca04)](https://github.com/amaklakov-droid/controlled-language-skill/issues/4)
+
+[English](../../README.md) · **Русский** · [Другие языки](../LANGUAGES.md) · [Добавить свой язык](../LANGUAGES.md#languages-we-look-for)
 
 **Controlled Language** — открытый [Agent Skill](https://agentskills.io).
 Он учит AI-агента писать, переписывать и проверять тексты на контролируемом
@@ -29,6 +34,13 @@ i18n:
 - **Другие языки** получают те же принципы в форме, которая подходит
   их грамматике. Языковые файлы добавляют правила для русского, немецкого,
   французского и испанского. Носители языков могут добавить новые.
+
+> [!IMPORTANT]
+> **Ищем носителей языков.** Нужны носители немецкого, испанского,
+> французского, португальского, китайского, японского, корейского и
+> арабского. Вы проверяете или пишете правила для своего языка. Проверка
+> занимает около часа, а ваше имя остаётся в проекте. Начните с
+> [issue #4](https://github.com/amaklakov-droid/controlled-language-skill/issues/4).
 
 ```bash
 npx skills add amaklakov-droid/controlled-language-skill
@@ -99,7 +111,7 @@ Skill меняет только текст. Он сохраняет код, ко
 | Правила | Все 39 правил | 32 универсальных правила и правила языкового файла |
 | Уровни | 1, 2, 3 | 1, 2, 3 |
 | Словарь на уровне 3 | Только общие слова, одобренные ASD-STE100 | Без контроля словаря: одобренного словаря нет |
-| Языковые правила | Встроены | [русский](../../controlled-language/references/languages/ru.md), [немецкий](../../controlled-language/references/languages/de.md), [французский](../../controlled-language/references/languages/fr.md), [испанский](../../controlled-language/references/languages/es.md) |
+| Языковые правила | Встроены | Языковой файл для каждого языка (см. таблицу ниже) |
 
 Универсальные правила управляют структурой. Например: длина предложения,
 одна инструкция в предложении, условие перед действием, активный залог,
@@ -108,8 +120,25 @@ Skill меняет только текст. Он сохраняет код, ко
 правила заменяют «произведите настройку» на «настройте».
 
 Если для языка нет языкового файла, skill применяет универсальные правила
-и сообщает, что файла для языка пока нет. Как добавить язык — в
+и сообщает, что файла для языка пока нет.
+
+**Языковые файлы и их статус.** Каждый файл проверяет носитель языка.
+
+| Язык | Файл | Статус | Как помочь |
+| --- | --- | --- | --- |
+| Русский | [ru.md](../../controlled-language/references/languages/ru.md) | Проверен | Сообщайте о проблемах |
+| Немецкий | [de.md](../../controlled-language/references/languages/de.md) | Черновик | [Проверить](https://github.com/amaklakov-droid/controlled-language-skill/issues/1) |
+| Французский | [fr.md](../../controlled-language/references/languages/fr.md) | Черновик | [Проверить](https://github.com/amaklakov-droid/controlled-language-skill/issues/2) |
+| Испанский | [es.md](../../controlled-language/references/languages/es.md) | Черновик | [Проверить](https://github.com/amaklakov-droid/controlled-language-skill/issues/3) |
+| Португальский | — | Ищем автора | [Написать](https://github.com/amaklakov-droid/controlled-language-skill/issues/5) |
+| Китайский, упрощённое и традиционное письмо | — | Ищем автора | [Написать](https://github.com/amaklakov-droid/controlled-language-skill/issues/6) |
+| Японский | — | Ищем автора | [Написать](https://github.com/amaklakov-droid/controlled-language-skill/issues/7) |
+| Корейский | — | Ищем автора | [Написать](https://github.com/amaklakov-droid/controlled-language-skill/issues/8) |
+| Арабский | — | Ищем автора | [Написать](https://github.com/amaklakov-droid/controlled-language-skill/issues/9) |
+
+Как добавить другой язык — в
 [translating.md](translating.md#языковые-правила-для-skill).
+Полный статус — в [LANGUAGES.md](../LANGUAGES.md).
 
 ## Быстрый старт
 
