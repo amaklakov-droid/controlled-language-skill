@@ -64,7 +64,7 @@ English (`en`) is the source language. Each language has 6 files to translate.
 
 | Language | Code | Reviewed | Draft | Outdated | Missing | Reviewed by |
 | --- | --- | ---: | ---: | ---: | ---: | --- |
-| [Русский (Russian)](ru/README.md) | `ru` | 5 | 1 | 0 | 0 | @amaklakov-droid |
+| [Русский (Russian)](ru/README.md) | `ru` | 6 | 0 | 0 | 0 | @amaklakov-droid |
 
 <!-- i18n-table:end -->
 

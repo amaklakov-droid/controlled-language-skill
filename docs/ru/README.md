@@ -2,7 +2,7 @@
 i18n:
   source: README.md
   source_hash: 595a3691e57d
-  status: draft
+  status: reviewed
   translated_with: ai
   reviewed_by: [@amaklakov-droid]
 -->
